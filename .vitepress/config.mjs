@@ -39,6 +39,10 @@ export default defineConfig({
                 text: "VLANs",
                 link: "/networking/concepts/VLANs",
               },
+              {
+                text: "LAGs",
+                link: "/networking/concepts/LAGs",
+              },
             ],
           },
           {
@@ -56,6 +60,20 @@ export default defineConfig({
               {
                 text: "Netgear AVLine",
                 link: "/networking/manufacturers/netgearAV",
+              },
+            ],
+          },
+          {
+            text: "Defaults",
+            collapsed: true,
+            items: [
+              {
+                text: "IP Scheme",
+                link: "/networking/defaults/IPs",
+              },
+              {
+                text: "VLANs",
+                link: "/networking/defaults/VLANs",
               },
             ],
           },
