@@ -24,26 +24,26 @@ export default defineConfig({
         text: "Networking",
         items: [
           {
-            text: "Networking Basics",
-            collapsed: false,
+            text: "Concepts",
+            collapsed: true,
             items: [
               {
                 text: "Addresses and Masks",
-                link: "/networking/basics/addresses",
+                link: "/networking/concepts/addresses",
               },
               {
                 text: "Addressing and DHCP",
-                link: "/networking/basics/DHCP",
+                link: "/networking/concepts/DHCP",
               },
               {
                 text: "VLANs",
-                link: "/networking/basics/VLANs",
+                link: "/networking/concepts/VLANs",
               },
             ],
           },
           {
             text: "Product Guides",
-            collapsed: false,
+            collapsed: true,
             items: [
               {
                 text: "Cisco SG",
@@ -87,7 +87,7 @@ export default defineConfig({
         items: [
           {
             text: "MIDI",
-            collapsed: false,
+            collapsed: true,
             items: [
               {
                 text: "Index",
@@ -97,7 +97,7 @@ export default defineConfig({
           },
           {
             text: "OSC",
-            collapsed: false,
+            collapsed: true,
             items: [
               {
                 text: "Index",
@@ -107,7 +107,7 @@ export default defineConfig({
           },
           {
             text: "AppleScript",
-            collapsed: false,
+            collapsed: true,
             items: [
               {
                 text: "Index",
@@ -117,7 +117,7 @@ export default defineConfig({
           },
           {
             text: "StreamDeck",
-            collapsed: false,
+            collapsed: true,
             items: [
               {
                 text: "Companion",
