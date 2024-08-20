@@ -16,11 +16,15 @@ IP addresses are 32-bit numbers, commonly represented as 4 octets, written in de
 
 :::
 
-We generally work in private networks called LANs, which are commonly limited to `192.168.X.X` or `10.X.X.X`
+We generally work in private networks called LANs, which are commonly limited to `192.168.X.X` or `10.X.X.X`.
 
-::: info
+`192.168.X.X` is the factory-default address range on most products.
 
-Typing `192.168.1.` repeatedly is a nightmare which can be avoided by using `10.0.1.` instead.
+::: warning
+
+Constantly typing `192.168.X.X` is a waking nightmare which can easily be avoided by using `10.0.X.X` instead.
+
+Friends don't let friends use `192.168.X.X`.
 
 :::
 
@@ -42,5 +46,11 @@ The last address within a subnet is reserved as the "Broadcas Address" and data 
 We almost always use "three octets masked", A.K.A. `/24` A.K.A. `255.255.255.0`
 
 This means that the first three octets of the IP address are the "subnet" and should match, while the last octet is the "address" and shold be unique.
+
+:::
+
+::: tip
+
+On older versions of macOS, you could type `/24` at the end of the IP address field in system preferences and it would auto-fill the subnet mask and default gateway for you. Sadly, this was discontinued in the horrible System Preferences overhaul of macOS 12.
 
 :::
