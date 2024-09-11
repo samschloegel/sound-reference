@@ -12,11 +12,13 @@ IP addresses are 32-bit numbers, commonly represented as 4 octets, written in de
 
 ::: tip EXAMPLE
 
-`192.168.1.35`
+`192.168.1.35` - decimal notation
+
+`11000000.10101000.00000001.00100011` - binary representation of the same address
 
 :::
 
-We generally work in private networks called LANs, which are commonly limited to `192.168.X.X` or `10.X.X.X`.
+We generally work in private networks called LANs, which are commonly limited to `192.168.X.X` or `10.X.X.X`, among other options. (To learn more, look into "RFC 1918 addresses" - address allocation for private networks).
 
 `192.168.X.X` is the factory-default address range on most products.
 
