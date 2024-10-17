@@ -4,9 +4,13 @@ IP addresses are assigned manually or automatically. Automatic assignments take 
 
 ## Manual Assignments
 
-Create a table for each subnet, list out all available addresses (or at least keep the list sorted numerically) and manually choose addresses for each device.
+Create a table for each subnet
 
-This is NOT recommended for Dante or XDIP networks.
+List out all available addresses (or at least keep the list sorted numerically)
+
+Manually choose addresses for each device.
+
+(This is NOT recommended for Dante or XDIP networks.)
 
 ::: tip EXAMPLE
 

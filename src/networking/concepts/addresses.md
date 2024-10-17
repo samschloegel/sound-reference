@@ -34,7 +34,7 @@ Friends don't let friends use `192.168.X.X`.
 
 Masks indicate how many bits are allocated to the subnet vs the address.
 
-The last address within a subnet is reserved as the "Broadcas Address" and data sent to that address will be broadcast to all devices within the subnet. As a common good practice I prefer to also reserve the first address (`X.X.X.1`) as the "Gateway Address" although this is not strictly necessary.
+The last address within a subnet is reserved as the "Broadcast Address" and data sent to that address will be broadcast to all devices within the subnet. As a common good practice I prefer to also reserve the first address (`X.X.X.1`) as the "Gateway Address" although this is not strictly necessary.
 
 | Binary                               | Decimal         | Suffix | Available Addresses |
 | ------------------------------------ | --------------- | ------ | ------------------- |

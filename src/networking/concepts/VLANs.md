@@ -24,7 +24,7 @@ Deviced plugged into port 7 will not be aware that they are a member of a VLAN.
 
 ## Trunk Ports
 
-Switch-to-switch or switch-to-device ports which use "Tagged" daata are called "Trunk" ports, and they are capabale of carrying data from multiple VLANs while keeping the VLANs separated.
+Switch-to-switch or switch-to-device ports which use "Tagged" data are called "Trunk" ports, and they are capabale of carrying data from multiple VLANs while keeping the VLANs separated.
 
 Trunk ports typically have a default VLAN which is "untagged", meaning that any device patched to it which does not read VLAN tags will simply exist as though connected to an Access port on that VLAN. This is typically the default VLAN of the switch, and is that VLAN through which the switch's management interface can be accessed.
 
