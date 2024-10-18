@@ -1,8 +1,8 @@
 import { defineConfig } from "vitepress";
 
 export default defineConfig({
-  title: "Sound Reference",
-  description: "Sound Reference",
+  title: "Sam's Sound Reference Pages",
+  description: "Sound Reference Site",
   srcDir: "src",
   // base: "/sound-reference/",
   // cleanUrls: true,
