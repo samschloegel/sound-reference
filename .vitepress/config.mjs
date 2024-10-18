@@ -16,8 +16,8 @@ export default defineConfig({
       {
         text: "Guide",
         items: [
-          { text: "How To", link: "/guide/" },
-          { text: "License", link: "/guide/license" },
+          { text: "How To Use This Guide", link: "/guide/" },
+          // { text: "License", link: "/guide/license" },
         ],
       },
       {

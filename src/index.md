@@ -2,7 +2,7 @@
 layout: home
 
 hero:
-  name: "Sound Reference"
+  name: "Sam's Sound Reference Pages"
   tagline: Reference guide for live audio work
   actions:
     - theme: brand
@@ -15,6 +15,11 @@ hero:
       text: schloegel.nyc
       link: https://schloegel.nyc
 ---
+
+::: danger IN PROGRESS
+This is an early draft of this site, there may be large sections missing or significant typos.
+
+:::
 
 ::: info FEEDBACK
 Please let me know what you think!
