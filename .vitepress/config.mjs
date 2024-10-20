@@ -3,10 +3,9 @@ import { defineConfig } from "vitepress";
 export default defineConfig({
   title: "Sam's Sound Reference",
   description: "Sound Reference Site",
+  base: "/sound-reference/",
   srcDir: "src",
-  // base: "/sound-reference/",
-  // cleanUrls: true,
-
+  cleanUrls: true,
   themeConfig: {
     nav: [
       { text: "Home", link: "/" },
