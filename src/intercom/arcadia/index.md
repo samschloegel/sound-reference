@@ -1,6 +1,4 @@
-# Clear-Com HelixNet
-
-HelixNet is the most common digital wired intercom system in NYC theatre.
+# Clear-Com ARCADIA
 
 ::: info A note about ARCADIA
 

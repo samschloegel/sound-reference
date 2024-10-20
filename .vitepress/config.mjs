@@ -24,6 +24,7 @@ export default defineConfig({
       },
       {
         text: "Networking",
+        link: "/networking/",
         items: [
           {
             text: "Concepts",
@@ -83,21 +84,22 @@ export default defineConfig({
       },
       {
         text: "Intercom",
+        link: "/intercom/",
         items: [
           {
-            text: "Encore",
-            link: "/intercom/encore",
-          },
-          {
             text: "HelixNet",
-            link: "/intercom/encore",
+            link: "/intercom/helixnet",
           },
           {
             text: "FreeSpeak",
-            link: "/intercom/encore",
+            link: "/intercom/freespeak",
           },
           {
             text: "Arcadia",
+            link: "/intercom/arcadia",
+          },
+          {
+            text: "Encore",
             link: "/intercom/encore",
           },
         ],
