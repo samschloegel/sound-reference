@@ -1,9 +1,25 @@
-# How To
+# How to Use This Site
 
-## Using this guide
+::: info
 
-::: tip USER PARAMETERS
+This is an info box
 
-`variable_name` explanation
+:::
+
+::: tip EXAMPLE
+
+This is an example box
+
+:::
+
+::: warning
+
+This is a warning box
+
+:::
+
+::: danger WARNING
+
+This is a serious warning box
 
 :::
