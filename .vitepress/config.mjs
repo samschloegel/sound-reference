@@ -17,9 +17,9 @@ export default defineConfig({
     sidebar: [
       {
         text: "Guide",
+        link: "/guide/",
         items: [
-          { text: "How To Use This Site", link: "/guide/" },
-          // { text: "License", link: "/guide/license" },
+          // { text: "License", link: "/" }
         ],
       },
       {
@@ -106,46 +106,23 @@ export default defineConfig({
       },
       {
         text: "Show Control",
+        link: "/show-control/",
         items: [
           {
             text: "MIDI",
-            collapsed: true,
-            items: [
-              {
-                text: "Index",
-                link: "/intercom/encore",
-              },
-            ],
+            link: "/show-control/midi",
           },
           {
             text: "OSC",
-            collapsed: true,
-            items: [
-              {
-                text: "Index",
-                link: "/intercom/encore",
-              },
-            ],
+            link: "/show-control/osc",
           },
           {
             text: "AppleScript",
-            collapsed: true,
-            items: [
-              {
-                text: "Index",
-                link: "/intercom/encore",
-              },
-            ],
+            link: "/show-control/applescript",
           },
           {
             text: "StreamDeck",
-            collapsed: true,
-            items: [
-              {
-                text: "Companion",
-                link: "/",
-              },
-            ],
+            link: "/",
           },
         ],
       },
