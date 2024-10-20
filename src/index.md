@@ -2,7 +2,7 @@
 layout: home
 
 hero:
-  name: "Sam's Sound Reference Pages"
+  name: "Sam's Sound Reference"
   tagline: Reference guide for live audio work
   actions:
     - theme: brand

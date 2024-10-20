@@ -1,7 +1,7 @@
 import { defineConfig } from "vitepress";
 
 export default defineConfig({
-  title: "Sam's Sound Reference Pages",
+  title: "Sam's Sound Reference",
   description: "Sound Reference Site",
   srcDir: "src",
   // base: "/sound-reference/",
@@ -11,12 +11,15 @@ export default defineConfig({
     nav: [
       { text: "Home", link: "/" },
       { text: "Guide", link: "/guide/" },
+      { text: "Networking", link: "/networking/" },
+      { text: "Intercom", link: "/intercom/" },
+      { text: "Show Control", link: "/show-control/" },
     ],
     sidebar: [
       {
         text: "Guide",
         items: [
-          { text: "How To Use This Guide", link: "/guide/" },
+          { text: "How To Use This Site", link: "/guide/" },
           // { text: "License", link: "/guide/license" },
         ],
       },
@@ -28,11 +31,11 @@ export default defineConfig({
             collapsed: true,
             items: [
               {
-                text: "Addresses and Masks",
+                text: "Understanding Addresses",
                 link: "/networking/concepts/addresses",
               },
               {
-                text: "Addressing and DHCP",
+                text: "Assigning Addresses",
                 link: "/networking/concepts/DHCP",
               },
               {
@@ -158,5 +161,6 @@ export default defineConfig({
     search: {
       provider: "local",
     },
+    externalLinkIcon: true,
   },
 });
