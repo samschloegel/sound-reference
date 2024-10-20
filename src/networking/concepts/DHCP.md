@@ -4,11 +4,13 @@ IP addresses are assigned manually or automatically. Automatic assignments take 
 
 ## Manual Assignments
 
-Create a table for each subnet
+It is very common in live sound systems to manually assign IP addresses to system-critical devices for control purposes, such as amplifiers, DSP, and consoles. (Note that this is not necessarily the case for audio-over-IP devices, such as on a dedicated Dante network.)
 
-List out all available addresses (or at least keep the list sorted numerically)
+Here is a basic workflow for doing so:
 
-Manually choose addresses for each device.
+- Create a table for each subnet
+- List out all available addresses within each table (or at least keep the list sorted numerically). This will help you to avoid assigning the same address to more than one device.
+- Manually choose addresses for each device. (I like to do it like [this](/networking/defaults/IPs#control-network)).
 
 (This is NOT recommended for Dante or XDIP networks.)
 

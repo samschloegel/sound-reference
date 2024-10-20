@@ -4,7 +4,7 @@ This is how I generally set up show networks.
 
 All of these layouts have caveats and are flexible to the needs of the show, but this is a starting framework.
 
-## Management VLAN
+## Switch Management VLAN
 
 VLAN 1
 
@@ -14,14 +14,14 @@ Switch addresses grouped by location.
 
 | Address/Range  | Device/Group      | Notes                        |
 | -------------- | ----------------- | ---------------------------- |
-| `10.0.0.11`    | FOH DP/CT Sw      | Dante Primary and Control    |
-| `10.0.0.12`    | FOH DS/HX Sw      | Dante Secondary and HelixNet |
-| `10.0.0.13`    | FOH KVM Sw        | XDIPs                        |
-| `10.0.0.14...` | FOH etc...        |                              |
-| `10.0.0.21`    | Ampland DP/CT Sw  |                              |
-| `10.0.0.22`    | Ampland DS/HX Sw  |                              |
-| `10.0.0.23`    | Ampland KVM Sw    |                              |
-| `10.0.0.24...` | Ampland etc...    |                              |
+| `10.0.0.11`    | Ampland DP/CT Sw  | Dante Primary and Control    |
+| `10.0.0.12`    | Ampland DS/HX Sw  | Dante Secondary and HelixNet |
+| `10.0.0.13`    | Ampland KVM Sw    | XDIPs                        |
+| `10.0.0.14...` | Ampland etc...    |                              |
+| `10.0.0.21`    | FOH DP/CT Sw      |                              |
+| `10.0.0.22`    | FOH DS/HX Sw      |                              |
+| `10.0.0.23`    | FOH KVM Sw        |                              |
+| `10.0.0.24...` | FOH etc...        |                              |
 | `10.0.0.31`    | Tech Distro HX Sw |                              |
 
 ## Control Network
@@ -34,21 +34,21 @@ Subnet: 10.0.1.0/24
 Groups of devices are generally "1-indexed" so that it is easy to remember their address - for example, Amp 1 is Address 101 rather than Address 100.
 :::
 
-| Address/Range    | Device/Group         | Notes                                                                                                  |
-| ---------------- | -------------------- | ------------------------------------------------------------------------------------------------------ |
-| `10.0.1.1`       | Gateway              |                                                                                                        |
-| `10.0.1.2-10`    | Network Devices      | WAPs etc                                                                                               |
-| `10.0.1.11...`   | Computers            | Playback, then FX, then FOH control, then RF/Utility                                                   |
-| `10.0.1.50`      | FOH Console          | Comes from Yamaha CL default. Only exists if console is on Control network - does not apply to DiGiCo. |
-| `10.0.1.51...`   | Additional Consoles  | Monitors, Utility, etc                                                                                 |
-| `10.0.1.70`      | Single R70           | Comes from d&b default                                                                                 |
-| `10.0.1.71...`   | Multiple R70s        | If there are multiple R70s (1-Indexed)                                                                 |
-| `10.0.1.100`     | Single Processor     | Comes from d&b DS100 default                                                                           |
-| `10.0.1.101...`  | Amps                 | If no amps, multiple processors.                                                                       |
-| `10.0.1.121...`  | Multiple Processors  | If amps.                                                                                               |
-| `10.0.1.151...`  | Wireless             | 1-Indexed                                                                                              |
-| `10.0.1.201-250` | DHCP Range           | For laptops, iPads, etc. When using UniFi, only DHCP-served addresses have internet access.            |
-| `10.0.1.255`     | Reserved - Broadcast |                                                                                                        |
+| Address/Range    | Device/Group         | Notes                                                                                                            |
+| ---------------- | -------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| `10.0.1.1`       | Gateway              | A UniFi router may have gateway addresses on multiple subnets.                                                   |
+| `10.0.1.2-10`    | Network Devices      | WAPs etc                                                                                                         |
+| `10.0.1.11...`   | Computers            | Playback, then FX, then Control, Utility, RF.                                                                    |
+| `10.0.1.50`      | FOH Console          | Comes from Yamaha CL default. Only exists if console is on Control network - does not apply to DiGiCo or Rivage. |
+| `10.0.1.51...`   | Additional Consoles  | Monitors, Utility, etc                                                                                           |
+| `10.0.1.70`      | Single R70           | Comes from d&b default                                                                                           |
+| `10.0.1.71...`   | Multiple R70s        | If there are multiple R70s (1-Indexed)                                                                           |
+| `10.0.1.100`     | Single Processor     | Comes from d&b DS100 default                                                                                     |
+| `10.0.1.101...`  | Amps                 | If no amps, multiple processors.                                                                                 |
+| `10.0.1.121...`  | Multiple Processors  | If amps.                                                                                                         |
+| `10.0.1.151...`  | Wireless             | 1-Indexed                                                                                                        |
+| `10.0.1.201-250` | DHCP Range           | For laptops, iPads, etc. When using UniFi, only DHCP-served addresses have internet access.                      |
+| `10.0.1.255`     | Reserved - Broadcast |                                                                                                                  |
 
 ## Intercom/Video Network
 
