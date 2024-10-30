@@ -3,6 +3,7 @@ import { defineConfig } from "vitepress";
 export default defineConfig({
   title: "Sam's Sound Reference",
   description: "Sound Reference Site",
+  titleTemplate: "Sound Reference",
   base: "/sound-reference/",
   srcDir: "src",
   cleanUrls: true,
@@ -151,5 +152,11 @@ export default defineConfig({
       provider: "local",
     },
     externalLinkIcon: true,
+    lastUpdated: true,
+    editLink: {
+      pattern:
+        "https://github.com/samschloegel/sound-reference/tree/main/src/:path",
+      text: "Edit this page on GitHub",
+    },
   },
 });

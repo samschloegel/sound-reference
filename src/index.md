@@ -1,5 +1,6 @@
 ---
 layout: home
+titleTemplate: "Home"
 
 hero:
   name: "Sam's Sound Reference"
