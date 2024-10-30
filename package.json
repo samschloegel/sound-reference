@@ -1,6 +1,6 @@
 {
   "name": "sound-reference",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "type": "module",
   "description": "",
   "author": "Sam Schloegel",
@@ -20,7 +20,7 @@
     "preview": "vitepress preview"
   },
   "devDependencies": {
-    "vitepress": "^1.3.3",
-    "vue": "^3.4.38"
+    "vitepress": "^1.4.2",
+    "vue": "^3.5.12"
   }
 }
