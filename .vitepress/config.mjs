@@ -17,13 +17,14 @@ export default defineConfig({
     sidebar: [
       {
         text: "Guide",
+        link: "/guide/",
         items: [
-          { text: "How To Use This Site", link: "/guide/" },
-          // { text: "License", link: "/guide/license" },
+          // { text: "License", link: "/" }
         ],
       },
       {
         text: "Networking",
+        link: "/networking/",
         items: [
           {
             text: "Concepts",
@@ -45,12 +46,20 @@ export default defineConfig({
                 text: "LAGs",
                 link: "/networking/concepts/LAGs",
               },
+              {
+                text: "PoE",
+                link: "/networking/concepts/poe",
+              },
             ],
           },
           {
             text: "Product Guides",
             collapsed: true,
             items: [
+              {
+                text: "Cisco Intro",
+                link: "/networking/manufacturers/cisco-intro",
+              },
               {
                 text: "Cisco SG",
                 link: "/networking/manufacturers/ciscoSG",
@@ -70,12 +79,12 @@ export default defineConfig({
             collapsed: true,
             items: [
               {
-                text: "IP Scheme",
-                link: "/networking/defaults/IPs",
-              },
-              {
                 text: "VLANs",
                 link: "/networking/defaults/VLANs",
+              },
+              {
+                text: "IPs",
+                link: "/networking/defaults/IPs",
               },
             ],
           },
@@ -83,67 +92,45 @@ export default defineConfig({
       },
       {
         text: "Intercom",
+        link: "/intercom/",
         items: [
           {
-            text: "Encore",
-            link: "/intercom/encore",
-          },
-          {
             text: "HelixNet",
-            link: "/intercom/encore",
+            link: "/intercom/helixnet",
           },
           {
             text: "FreeSpeak",
-            link: "/intercom/encore",
+            link: "/intercom/freespeak",
           },
           {
             text: "Arcadia",
+            link: "/intercom/arcadia",
+          },
+          {
+            text: "Encore",
             link: "/intercom/encore",
           },
         ],
       },
       {
         text: "Show Control",
+        link: "/show-control/",
         items: [
           {
             text: "MIDI",
-            collapsed: true,
-            items: [
-              {
-                text: "Index",
-                link: "/intercom/encore",
-              },
-            ],
+            link: "/show-control/midi",
           },
           {
             text: "OSC",
-            collapsed: true,
-            items: [
-              {
-                text: "Index",
-                link: "/intercom/encore",
-              },
-            ],
+            link: "/show-control/osc",
           },
           {
             text: "AppleScript",
-            collapsed: true,
-            items: [
-              {
-                text: "Index",
-                link: "/intercom/encore",
-              },
-            ],
+            link: "/show-control/applescript",
           },
           {
             text: "StreamDeck",
-            collapsed: true,
-            items: [
-              {
-                text: "Companion",
-                link: "/",
-              },
-            ],
+            link: "/show-control/streamdeck",
           },
         ],
       },
