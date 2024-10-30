@@ -46,12 +46,20 @@ export default defineConfig({
                 text: "LAGs",
                 link: "/networking/concepts/LAGs",
               },
+              {
+                text: "PoE",
+                link: "/networking/concepts/poe",
+              },
             ],
           },
           {
             text: "Product Guides",
             collapsed: true,
             items: [
+              {
+                text: "Cisco Intro",
+                link: "/networking/manufacturers/cisco-intro",
+              },
               {
                 text: "Cisco SG",
                 link: "/networking/manufacturers/ciscoSG",
@@ -122,7 +130,7 @@ export default defineConfig({
           },
           {
             text: "StreamDeck",
-            link: "/",
+            link: "/show-control/streamdeck",
           },
         ],
       },
