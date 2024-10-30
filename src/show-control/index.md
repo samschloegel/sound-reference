@@ -1,3 +1,7 @@
+---
+prev: false
+---
+
 # Show Control
 
 Show control is a long, complex topic.
