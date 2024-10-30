@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # Default VLANs
 
 | Name            | ID  | Prefix          | Color  | Notes                      |

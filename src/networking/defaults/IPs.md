@@ -1,3 +1,7 @@
+---
+editLink: false
+---
+
 # Default IP Table
 
 This is how I generally set up show networks.
