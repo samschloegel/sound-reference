@@ -4,11 +4,11 @@ This is how I generally set up show networks.
 
 All of these layouts have caveats and are flexible to the needs of the show, but this is a starting framework.
 
-## Switch Management VLAN
+## Switch Management
 
-VLAN 1
+VLAN `1` (Default VLAN)
 
-Subnet: 10.0.0.0/24
+Subnet `10.0.0.0/24`
 
 Switch addresses grouped by location.
 
@@ -26,9 +26,11 @@ Switch addresses grouped by location.
 
 ## Control Network
 
-VLAN 10
+VLAN `10`
 
-Subnet: 10.0.1.0/24
+Subnet `10.0.1.0/24`
+
+DHCP-served address `201-249`
 
 ::: info NOTE
 Groups of devices are generally "1-indexed" so that it is easy to remember their address - for example, Amp 1 is Address 101 rather than Address 100.
@@ -52,13 +54,13 @@ Groups of devices are generally "1-indexed" so that it is easy to remember their
 
 ## Intercom/Video Network
 
-VLAN 20
+VLAN `20`
 
-Subnet: 10.0.2.0/24
+Subnet `10.0.2.0/24`
 
 Intercom addresses distributed by department, and by Show/Tech.
 
-Video addresses above 200.
+Video addresses above `200`
 
 ::: info NOTE
 Groups of devices are generally "1-indexed" so that it is easy to remember their address - for example, LX Show users start at 31 rather than 30.
@@ -86,18 +88,28 @@ Groups of devices are generally "1-indexed" so that it is easy to remember their
 
 ## KVM Network
 
-VLAN 30
+VLAN `30`
 
-Subnet: LINK LOCAL `169.254.X.X`
+Subnet `LINK LOCAL` `169.254.0.0/16`
+
+I have not had a reason to static-address XDIPs before. However, there is now an API for external control of XDIPs via a handful of methods, and implementing that would require a static address scheme. If I try this I will likely use `10.0.3.0/24`.
 
 ## Dante Primary Network
 
-VLAN 100
+VLAN `100`
 
-Subnet: LINK LOCAL `169.254.X.X`
+Subnet `LINK LOCAL` `169.254.0.0/16`
+
+::: danger AUTOMATIC ONLY, NO EXCEPTIONS
+Never use DHCP server or static addresses
+:::
 
 ## Dante Secondary Network
 
 VLAN 200
 
-Subnet: LINK LOCAL `172...` (Dante defaults)
+Subnet: Dante Secondary link-local range `172...`
+
+::: danger AUTOMATIC ONLY, NO EXCEPTIONS
+Never use DHCP server or static addresses
+:::

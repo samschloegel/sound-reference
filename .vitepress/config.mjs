@@ -79,12 +79,12 @@ export default defineConfig({
             collapsed: true,
             items: [
               {
-                text: "IP Scheme",
-                link: "/networking/defaults/IPs",
-              },
-              {
                 text: "VLANs",
                 link: "/networking/defaults/VLANs",
+              },
+              {
+                text: "IPs",
+                link: "/networking/defaults/IPs",
               },
             ],
           },
