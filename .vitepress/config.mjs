@@ -156,7 +156,7 @@ export default defineConfig({
     editLink: {
       pattern:
         "https://github.com/samschloegel/sound-reference/tree/main/src/:path",
-      text: "Edit this page on GitHub",
+      text: "Suggest an edit on GitHub",
     },
   },
 });
