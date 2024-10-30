@@ -25,10 +25,11 @@ export default defineConfig({
       {
         text: "Networking",
         link: "/networking/",
+        collapsed: false,
         items: [
           {
             text: "Concepts",
-            collapsed: true,
+            collapsed: false,
             items: [
               {
                 text: "Understanding Addresses",
@@ -54,7 +55,7 @@ export default defineConfig({
           },
           {
             text: "Product Guides",
-            collapsed: true,
+            collapsed: false,
             items: [
               {
                 text: "Cisco Intro",
@@ -76,7 +77,7 @@ export default defineConfig({
           },
           {
             text: "Defaults",
-            collapsed: true,
+            collapsed: false,
             items: [
               {
                 text: "VLANs",
@@ -93,6 +94,7 @@ export default defineConfig({
       {
         text: "Intercom",
         link: "/intercom/",
+        collapsed: true,
         items: [
           {
             text: "HelixNet",
@@ -115,6 +117,7 @@ export default defineConfig({
       {
         text: "Show Control",
         link: "/show-control/",
+        collapsed: true,
         items: [
           {
             text: "MIDI",
