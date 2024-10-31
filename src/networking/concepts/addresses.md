@@ -55,15 +55,11 @@ Subnet masks are typically represented in decimal notation (`255.255.255.0`) or 
 | `11111111.11111111.11111110.0000000` | `255.255.254.0` | `/23`  | 510            |
 | `11111111.11111111.11111111.0000000` | `255.255.255.0` | `/24`  | 253            |
 
-::: info
+In live sound systems, we almost always use "three octets masked", denoted as `255.255.255.0` or `/24`, because our networks do not typically have enough hosts to necessitate more available address space. (Obviously there are exceptions out there.)
 
-In live sound systems, we almost always use "three octets masked", denoted as `255.255.255.0` or `/24` because our networks so not typically have enough hosts to necessitate more available address space. (Obviously there are exceptions out there.)
+This means that the first three octets of the IP address are the "subnet", and should match, while the last octet is the "address", and should be unique.
 
-This means that the first three octets of the IP address are the "subnet" and should match, while the last octet is the "address" and shold be unique.
-
-:::
-
-::: tip
+::: info TIP
 
 On older versions of macOS, you could type `/24` at the end of the IP address field in System Preferences, and it would auto-fill the subnet mask and default gateway for you. Sadly, this was discontinued in the horrible System Preferences overhaul of macOS 12.
 
