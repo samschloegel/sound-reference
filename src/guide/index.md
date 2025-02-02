@@ -1,3 +1,7 @@
+---
+title: How To
+---
+
 # How to Use This Site
 
 ::: info
