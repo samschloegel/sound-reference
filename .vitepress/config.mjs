@@ -30,7 +30,7 @@ export default defineConfig({
         items: [
           {
             text: "Concepts",
-            collapsed: false,
+            collapsed: true,
             items: [
               {
                 text: "Understanding Addresses",
@@ -50,13 +50,13 @@ export default defineConfig({
               },
               {
                 text: "PoE",
-                link: "/networking/concepts/poe",
+                link: "/networking/concepts/PoE",
               },
             ],
           },
           {
             text: "Product Guides",
-            collapsed: false,
+            collapsed: true,
             items: [
               {
                 text: "Cisco Intro",
@@ -78,7 +78,7 @@ export default defineConfig({
           },
           {
             text: "Defaults",
-            collapsed: false,
+            collapsed: true,
             items: [
               {
                 text: "VLANs",
@@ -95,7 +95,7 @@ export default defineConfig({
       {
         text: "Intercom",
         link: "/intercom/",
-        collapsed: true,
+        collapsed: false,
         items: [
           {
             text: "HelixNet",
@@ -118,7 +118,7 @@ export default defineConfig({
       {
         text: "Show Control",
         link: "/show-control/",
-        collapsed: true,
+        collapsed: false,
         items: [
           {
             text: "MIDI",
@@ -138,6 +138,30 @@ export default defineConfig({
           },
         ],
       },
+      {
+        text: "KVMs",
+        link: "/kvm/",
+        collapsed: false,
+        items: [
+          {
+            text: "XDIP",
+            link: "/kvm/xdip",
+          },
+        ],
+      },
+      {
+        text: "Speakers",
+        link: "/speakers/",
+        collapsed: false,
+        items: [
+          {
+            text: "Meyer",
+            link: "/speakers/meyer/",
+            collpased: true,
+            items: [{ text: "Power", link: "/speakers/meyer/power" }],
+          },
+        ],
+      },
     ],
     socialLinks: [
       {
@@ -152,7 +176,12 @@ export default defineConfig({
       provider: "local",
     },
     externalLinkIcon: true,
-    lastUpdated: true,
+    lastUpdated: {
+      text: "Last updated",
+      formatOptions: {
+        dateStyle: "short",
+      },
+    },
     editLink: {
       pattern:
         "https://github.com/samschloegel/sound-reference/tree/main/src/:path",
