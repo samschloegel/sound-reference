@@ -1,191 +1,191 @@
-import { defineConfig } from "vitepress";
+import { defineConfig } from 'vitepress';
 
 export default defineConfig({
   title: "Sam's Sound Reference",
-  description: "Sound Reference Site",
-  titleTemplate: "Sound Reference",
-  base: "/sound-reference/",
-  srcDir: "src",
+  description: 'Sound Reference Site',
+  titleTemplate: 'Sound Reference',
+  base: '/sound-reference/',
+  srcDir: 'src',
   cleanUrls: true,
   themeConfig: {
     nav: [
-      { text: "Home", link: "/" },
-      { text: "Guide", link: "/guide/" },
-      { text: "Networking", link: "/networking/" },
-      { text: "Intercom", link: "/intercom/" },
-      { text: "Show Control", link: "/show-control/" },
+      { text: 'Home', link: '/' },
+      { text: 'Guide', link: '/guide/' },
+      { text: 'Networking', link: '/networking/' },
+      { text: 'Intercom', link: '/intercom/' },
+      { text: 'Show Control', link: '/show-control/' },
     ],
     sidebar: [
       {
-        text: "Guide",
-        link: "/guide/",
+        text: 'Guide',
+        link: '/guide/',
         items: [
           // { text: "License", link: "/" }
         ],
       },
       {
-        text: "Networking",
-        link: "/networking/",
+        text: 'Networking',
+        link: '/networking/',
         collapsed: false,
         items: [
           {
-            text: "Concepts",
+            text: 'Concepts',
             collapsed: true,
             items: [
               {
-                text: "Understanding Addresses",
-                link: "/networking/concepts/addresses",
+                text: 'Understanding Addresses',
+                link: '/networking/concepts/addresses',
               },
               {
-                text: "Assigning Addresses",
-                link: "/networking/concepts/DHCP",
+                text: 'Assigning Addresses',
+                link: '/networking/concepts/DHCP',
               },
               {
-                text: "VLANs",
-                link: "/networking/concepts/VLANs",
+                text: 'VLANs',
+                link: '/networking/concepts/VLANs',
               },
               {
-                text: "LAGs",
-                link: "/networking/concepts/LAGs",
+                text: 'LAGs',
+                link: '/networking/concepts/LAGs',
               },
               {
-                text: "PoE",
-                link: "/networking/concepts/PoE",
+                text: 'PoE',
+                link: '/networking/concepts/PoE',
               },
             ],
           },
           {
-            text: "Product Guides",
+            text: 'Product Guides',
             collapsed: true,
             items: [
               {
-                text: "Cisco Intro",
-                link: "/networking/manufacturers/cisco-intro",
+                text: 'Common Models',
+                link: '/networking/product-guides/commonModels',
               },
               {
-                text: "Cisco SG",
-                link: "/networking/manufacturers/ciscoSG",
+                text: 'Cisco SG',
+                link: '/networking/product-guides/ciscoSG',
               },
               {
-                text: "Cisco CBS",
-                link: "/networking/manufacturers/ciscoCBS",
+                text: 'Cisco CBS',
+                link: '/networking/product-guides/ciscoCBS',
               },
               {
-                text: "Netgear AVLine",
-                link: "/networking/manufacturers/netgearAV",
+                text: 'Netgear AV Line',
+                link: '/networking/product-guides/netgearAV',
               },
             ],
           },
           {
-            text: "Defaults",
+            text: 'Defaults',
             collapsed: true,
             items: [
               {
-                text: "VLANs",
-                link: "/networking/defaults/VLANs",
+                text: 'VLAN Scheme',
+                link: '/networking/defaults/VLANs',
               },
               {
-                text: "IPs",
-                link: "/networking/defaults/IPs",
+                text: 'IP Scheme',
+                link: '/networking/defaults/IPs',
               },
             ],
           },
         ],
       },
       {
-        text: "Intercom",
-        link: "/intercom/",
+        text: 'Intercom',
+        link: '/intercom/',
         collapsed: false,
         items: [
           {
-            text: "HelixNet",
-            link: "/intercom/helixnet",
+            text: 'HelixNet',
+            link: '/intercom/helixnet',
           },
           {
-            text: "FreeSpeak",
-            link: "/intercom/freespeak",
+            text: 'FreeSpeak',
+            link: '/intercom/freespeak',
           },
           {
-            text: "Arcadia",
-            link: "/intercom/arcadia",
+            text: 'Arcadia',
+            link: '/intercom/arcadia',
           },
           {
-            text: "Encore",
-            link: "/intercom/encore",
+            text: 'Encore',
+            link: '/intercom/encore',
           },
         ],
       },
       {
-        text: "Show Control",
-        link: "/show-control/",
+        text: 'Show Control',
+        link: '/show-control/',
         collapsed: false,
         items: [
           {
-            text: "MIDI",
-            link: "/show-control/midi",
+            text: 'MIDI',
+            link: '/show-control/midi',
           },
           {
-            text: "OSC",
-            link: "/show-control/osc",
+            text: 'OSC',
+            link: '/show-control/osc',
           },
           {
-            text: "AppleScript",
-            link: "/show-control/applescript",
+            text: 'AppleScript',
+            link: '/show-control/applescript',
           },
           {
-            text: "StreamDeck",
-            link: "/show-control/streamdeck",
+            text: 'StreamDeck',
+            link: '/show-control/streamdeck',
           },
         ],
       },
       {
-        text: "KVMs",
-        link: "/kvm/",
+        text: 'KVM',
+        link: '/kvm/',
         collapsed: false,
         items: [
           {
-            text: "XDIP",
-            link: "/kvm/xdip",
+            text: 'XDIP',
+            link: '/kvm/xdip',
           },
         ],
       },
       {
-        text: "Speakers",
-        link: "/speakers/",
+        text: 'Speakers',
+        link: '/speakers/',
         collapsed: false,
         items: [
           {
-            text: "Meyer",
-            link: "/speakers/meyer/",
+            text: 'Meyer',
+            link: '/speakers/meyer/',
             collpased: true,
-            items: [{ text: "Power", link: "/speakers/meyer/power" }],
+            items: [{ text: 'Power', link: '/speakers/meyer/power' }],
           },
         ],
       },
     ],
     socialLinks: [
       {
-        icon: "github",
-        link: "https://github.com/samschloegel/sound-reference",
+        icon: 'github',
+        link: 'https://github.com/samschloegel/sound-reference',
       },
     ],
     outline: {
-      level: "deep",
+      level: 'deep',
     },
     search: {
-      provider: "local",
+      provider: 'local',
     },
     externalLinkIcon: true,
     lastUpdated: {
-      text: "Last updated",
+      text: 'Last updated',
       formatOptions: {
-        dateStyle: "short",
+        dateStyle: 'short',
       },
     },
     editLink: {
       pattern:
-        "https://github.com/samschloegel/sound-reference/tree/main/src/:path",
-      text: "Suggest an edit on GitHub",
+        'https://github.com/samschloegel/sound-reference/tree/main/src/:path',
+      text: 'Suggest an edit on GitHub',
     },
   },
 });
