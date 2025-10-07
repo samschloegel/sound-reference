@@ -1,1 +1,0 @@
-# Cisco SG Series
