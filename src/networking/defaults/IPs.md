@@ -119,7 +119,7 @@ All XDIPs communicate using Link Local addresses, even when they are assigned st
 There is a restful API for external control of XDIPs, and implementing that would typically require a static address scheme.
 
 ::: warning Static Addresses
-In my experience, setting static addresses in the configuration of XDIP transmitters can cause issues, and is unnecessary. If you choose to use static addresses for external control, only assign static addresses to receivers. See the [KVM/XDIP](/KVM/XDIP) page for more info.
+In my experience, setting static addresses in the configuration of XDIP transmitters can cause issues, and is unnecessary. If you choose to use static addresses for external control, only assign static addresses to receivers. See the [KVM/XDIP](/KVM/xdip) page for more info.
 :::
 
 ## Dante Primary
