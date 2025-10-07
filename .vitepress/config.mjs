@@ -71,7 +71,7 @@ export default defineConfig({
                 link: '/networking/product-guides/ciscoCBS',
               },
               {
-                text: 'Netgear AVLine',
+                text: 'Netgear AV Line',
                 link: '/networking/product-guides/netgearAV',
               },
             ],
